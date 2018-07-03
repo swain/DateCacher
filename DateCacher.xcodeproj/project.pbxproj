@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A0EF72B520EC33F4009A484D /* DateCacher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EF72AB20EC33F4009A484D /* DateCacher.framework */; };
 		A0EF72BA20EC33F4009A484D /* DateCacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF72B920EC33F4009A484D /* DateCacherTests.swift */; };
-		A0EF72BC20EC33F4009A484D /* DateCacher.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EF72AE20EC33F4009A484D /* DateCacher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0EF72C620EC3434009A484D /* DateCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF72C520EC3434009A484D /* DateCacher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		A0EF72AB20EC33F4009A484D /* DateCacher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateCacher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0EF72AE20EC33F4009A484D /* DateCacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateCacher.h; sourceTree = "<group>"; };
 		A0EF72AF20EC33F4009A484D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF72B420EC33F4009A484D /* DateCacherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateCacherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF72B920EC33F4009A484D /* DateCacherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCacherTests.swift; sourceTree = "<group>"; };
 		A0EF72BB20EC33F4009A484D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0EF72C520EC3434009A484D /* DateCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCacher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 		A0EF72AD20EC33F4009A484D /* DateCacher */ = {
 			isa = PBXGroup;
 			children = (
-				A0EF72AE20EC33F4009A484D /* DateCacher.h */,
 				A0EF72AF20EC33F4009A484D /* Info.plist */,
+				A0EF72C520EC3434009A484D /* DateCacher.swift */,
 			);
 			path = DateCacher;
 			sourceTree = "<group>";
@@ -93,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0EF72BC20EC33F4009A484D /* DateCacher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +147,7 @@
 				TargetAttributes = {
 					A0EF72AA20EC33F4009A484D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					A0EF72B320EC33F4009A484D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0EF72C620EC3434009A484D /* DateCacher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +340,11 @@
 		A0EF72C020EC33F4009A484D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 39TR9YNAJ4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -355,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.smolster.DateCacher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,9 +367,11 @@
 		A0EF72C120EC33F4009A484D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 39TR9YNAJ4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -387,6 +393,7 @@
 		A0EF72C320EC33F4009A484D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DateCacherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +411,7 @@
 		A0EF72C420EC33F4009A484D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DateCacherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
