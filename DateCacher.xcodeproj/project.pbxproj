@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04DBCF9E22F48F8100EEAE92 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04DBCF9D22F48F8100EEAE92 /* README.md */; };
 		A0EF72B520EC33F4009A484D /* DateCacher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EF72AB20EC33F4009A484D /* DateCacher.framework */; };
 		A0EF72BA20EC33F4009A484D /* DateCacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF72B920EC33F4009A484D /* DateCacherTests.swift */; };
 		A0EF72C620EC3434009A484D /* DateCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF72C520EC3434009A484D /* DateCacher.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DBCF9D22F48F8100EEAE92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A0EF72AB20EC33F4009A484D /* DateCacher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateCacher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF72AF20EC33F4009A484D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF72B420EC33F4009A484D /* DateCacherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateCacherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,7 @@
 		A0EF72A120EC33F4009A484D = {
 			isa = PBXGroup;
 			children = (
+				04DBCF9D22F48F8100EEAE92 /* README.md */,
 				A0EF72AD20EC33F4009A484D /* DateCacher */,
 				A0EF72B820EC33F4009A484D /* DateCacherTests */,
 				A0EF72AC20EC33F4009A484D /* Products */,
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DBCF9E22F48F8100EEAE92 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +363,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -385,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.smolster.DateCacher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
