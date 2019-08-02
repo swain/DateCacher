@@ -9,7 +9,15 @@
 import Foundation
 
 public protocol DateFormat {
+    
+    /// The `DateFormatter`-compatible format string (e.g. "MM-dd-yyyy")
     var formatString: String { get }
+    
+    /**
+     The set of `Calendar.Component`s relevant to the format string.
+     
+     For example, the set relevant to the format string `"MM-dd-yyyy"` would be `[.month, .day, .year]`.
+     */
     var components: Set<Calendar.Component> { get }
 }
 
