@@ -4,6 +4,8 @@
 
 A result-caching Date Formatter helper.
 
+
+
 ## Use Case
 
 `DateCacher` uses result-caching to optimize formatting `String` objects from `Date` objects, and vice versa. This optimization is effective for apps that expect to display lots of dates across multiple formats.
